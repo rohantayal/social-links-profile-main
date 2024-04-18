@@ -82,6 +82,11 @@ body {
     border-radius: 12px;
 }
 
+#card #links a:hover{
+    background-color: var(--clr-pri-green);
+    color: var(--clr-neu-off-black);
+}
+
 
 @media  (min-width: 600px) {
     body #card{
