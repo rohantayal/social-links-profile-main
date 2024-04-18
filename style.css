@@ -1,0 +1,95 @@
+:root {
+
+    --clr-pri-green: hsl(75, 94%, 57%);
+
+    --clr-neu-white: hsl(0, 0%, 100%);
+    --clr-neu-grey: hsl(0, 0%, 20%);
+    --clr-neu-dark-grey: hsl(0, 0%, 12%);
+    --clr-neu-off-black: hsl(0, 0%, 8%);
+
+    font-size: 14px;
+
+    font-family: Inter, Arial, Helvetica, sans-serif;
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--clr-neu-off-black);
+}
+
+#card {
+    width: 90%;
+    text-align: center;
+    height: 500px;
+    align-self: center;
+    background-color: var(--clr-neu-dark-grey);
+    border-radius: 15px;
+}
+
+#card #jessica-image{
+    height: 100px;
+
+}
+
+#card #jessica-image img{
+    height: 75%;
+    width: auto;
+    border-radius: 100%;
+    margin-top: 15px;
+
+}
+
+#card h1{
+    margin: 14px 0 4px 0;
+    color: var(--clr-neu-white);
+}
+
+#card h3{
+    margin: 0;
+    color: var(--clr-pri-green);
+}
+
+#card p{
+    margin: 20px 0 14px 0;
+    color: var(--clr-neu-white);
+}
+
+#card #links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    margin: 14px 0;
+}
+
+#card #links a{
+    align-self: center;
+    display: block;
+    text-decoration: none;
+    color: var(--clr-neu-white);
+    background-color: var(--clr-neu-grey);
+    width: 80%;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+#card #links a:hover{
+    background-color: var(--clr-pri-green);
+    color: var(--clr-neu-off-black);
+}
+
+@media  (min-width: 600px) {
+    body #card{
+        width: 360px
+    }
+    
+}
